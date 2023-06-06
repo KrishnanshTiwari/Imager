@@ -33,7 +33,7 @@ const CreatePost = () => {
         const data = await response.json();
         setForm({ ...form, photo: `data:image/jpeg;base64,${data.photo}` });
       } catch (err) {
-        alert(err);
+        alert(API expired! sorry for the inconvenience);
       } finally {
         setGeneratingImg(false);
       }
